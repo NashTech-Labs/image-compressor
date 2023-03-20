@@ -1,0 +1,12 @@
+<header>
+  <h1>Image Compressor</h1>
+</header>
+
+<section>
+  <button (click)="compressFile()">Upload & Compress</button>
+</section>
+
+<div class="image-result">
+  <div *ngIf="imgResultBeforeCompress"><img class="before-compress" [src]="imgResultBeforeCompress"/></div>
+  <div *ngIf="imgResultAfterCompress"><img class="after-compress" [src]="imgResultAfterCompress"/></div>
+</div>
